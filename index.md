@@ -18,6 +18,7 @@ https://github.com/psf/requests/commit/ef8563ab36c6b52834ee9c35f6f75a424cd9ceef
 并不是使用了burp代理后requests分块传输不生效，而是分块传输发生在Client与代理Server之间，burp请求转发并没有使用分块传输，所以在burp上的抓包情况看没有使用分块传输。
 ## 抓包验证
 - 本地抓包 (Client与代理Server)
+
 ```
 POST http://xxcdd.for.test.com/vulnerabilities/exec/ HTTP/1.1
 Host: xxcdd.for.test.com
@@ -69,7 +70,9 @@ Content-Type: text/html;charset=utf-8
 
 <!DOCTYPE html>
 ```
+
 - burp请求转发
+
 ```
 POST /vulnerabilities/exec/ HTTP/1.1
 Host: xxcdd.for.test.com
@@ -95,6 +98,7 @@ Content-Type: text/html;charset=utf-8
 
 <!DOCTYPE html>
 ```
+
 
 # Debug requests的分块传输过程
 
