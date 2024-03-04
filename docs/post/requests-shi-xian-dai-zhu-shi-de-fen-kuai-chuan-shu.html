@@ -70,8 +70,11 @@ body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;
 </div>
 </div>
     <div id="content">
-<div class="markdown-body" id="postBody"><h1>前言</h1>
-<p>最近有WAF bypass的需求，学习了下分块传输的方法，网上也有<a href="https://github.com/c0ny1/chunked-coding-converter">burp插件</a>，需要使用python实现一下，在使用requests实现时遇到了一些坑，记录下。</p>
+<div class="markdown-body" id="postBody"><p align="center">
+  <a href="https://count.getloli.com/" rel="nofollow"><img src="https://camo.githubusercontent.com/c72356c9263b078ebb5fd6f38a46d8005f82392b41259863884d7cc9a02c3428/68747470733a2f2f6d6f652d636f756e7465722e676c697463682e6d652f6765742f4072657175657374732d7368692d7869616e2d6461692d7a68752d7368692d64652d66656e2d6b7561692d636875616e2d7368753f7468656d653d67656c626f6f7275" data-canonical-src="https://moe-counter.glitch.me/get/@requests-shi-xian-dai-zhu-shi-de-fen-kuai-chuan-shu?theme=gelbooru" style="max-width: 100%;">
+</a></p>
+# 前言
+最近有WAF bypass的需求，学习了下分块传输的方法，网上也有[burp插件](https://github.com/c0ny1/chunked-coding-converter)，需要使用python实现一下，在使用requests实现时遇到了一些坑，记录下。
 <h1>requests分块编码请求</h1>
 <p><a href="https://docs.python-requests.org/zh_CN/latest/user/advanced.html?highlight=%E5%88%86%E5%9D%97%E4%BC%A0%E8%BE%93#chunk-encoding" rel="nofollow">https://docs.python-requests.org/zh_CN/latest/user/advanced.html?highlight=%E5%88%86%E5%9D%97%E4%BC%A0%E8%BE%93#chunk-encoding</a></p>
 <p>请求参数<code class="notranslate">data</code>提供一个生成器即可</p>
