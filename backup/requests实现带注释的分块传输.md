@@ -2,6 +2,8 @@
   <a href="https://count.getloli.com/"><img src="https://moe-counter.glitch.me/get/@requests-shi-xian-dai-zhu-shi-de-fen-kuai-chuan-shu?theme=gelbooru">
 </a></p>
 
+[TOC]
+
 # 前言
 最近有WAF bypass的需求，学习了下分块传输的方法，网上也有[burp插件](https://github.com/c0ny1/chunked-coding-converter)，需要使用python实现一下，在使用requests实现时遇到了一些坑，记录下。
 
